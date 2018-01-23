@@ -1,0 +1,98 @@
+.block-subscribe {
+    padding: 45px 45px;
+    text-align: center;
+    background: #282723;
+
+    &-title {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        font-family: $f-stack-special;
+        font-size: 16px;
+    }
+
+    &-form {
+        position: relative;
+        display: inline-block;
+        width: 420px;
+        vertical-align: middle;
+        margin-left: 75px;
+        padding-right: 126px;
+
+        .input-text {
+            width: 100%;
+            height: 40px;
+            padding: 0 12px;
+            font-size: 14px;
+            font-family: $f-stack-sp-second;
+            background: #E1DFE0;
+            border-radius: 0;
+
+            &::-webkit-input-placeholder {
+                color: #282723;
+            }
+            &::-moz-placeholder {
+                color: #282723;
+            }
+            &:-ms-input-placeholder {
+                color: #282723;
+            }
+            &:-moz-placeholder {
+                color: #282723;
+            }
+        }
+
+        .validation-advice {
+            position: absolute;
+            top: 36px;
+            left: 0;
+        }
+
+        .button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            padding: 0;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-family: $f-stack-sp-second;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #A0A0A0;
+        }
+
+        * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    @include bp (max-width, $bp-xlarge) {
+        .block-subscribe-form {
+            margin-left: 35px;
+        }
+    }
+
+    @include bp (max-width, $bp-large) {
+        .block-subscribe-title {
+            display: block;
+        }
+
+        .block-subscribe-form {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+
+    @include bp (max-width, $bp-small) {
+        padding: 15px;
+
+        &-form {
+            width: 100%;
+        }
+    }
+}

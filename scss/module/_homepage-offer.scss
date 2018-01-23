@@ -1,0 +1,43 @@
+.homepage-offer {
+    margin-bottom: 44px;
+    padding: 160px 10px 200px;
+    text-align: center;
+    background: url("../images/ex/offer-bg.png") top center no-repeat;
+    background-size: cover;
+
+    &-title {
+        margin: 0;
+        color: #fff;
+        font-family: $f-stack-special;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 7.5px;
+
+        @include bp (max-width, $bp-small) {
+            font-size: 30px;
+        }
+    }
+
+    .homepage-offer-description {
+        display: inline-block;
+        margin: 32px 0 0;
+        max-width: 605px;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 3.35px;
+        line-height: 23px;
+        font-family: $f-stack-sp-second;
+    }
+
+    &-shopnow {
+        margin-top: 88px;
+    }
+
+    @include bp (max-width, $bp-large) {
+        padding: 105px 10px 85px;
+
+        &-shopnow {
+            margin-top: 50px;
+        }
+    }
+}

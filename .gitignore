@@ -1,0 +1,11 @@
+#IDE settings
+/.project
+/.metadata
+/.settings
+/.buildpath
+/.classpath
+/.idea/*
+*.iml
+/nbproject
+*.codekit
+.sass-cache

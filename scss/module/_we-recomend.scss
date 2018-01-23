@@ -1,0 +1,123 @@
+.we-recommend {
+    &-menu {
+        //margin: 0 -30px;
+        //padding: 0 30px;
+        white-space: nowrap;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &-item {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 10px;
+            font-size: 13px;
+            white-space: nowrap;
+            line-height: 47px;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+
+            &-active {
+                color: #e31837;
+                border-bottom-color: #e31837;
+            }
+        }
+    }
+
+    &-contens {}
+
+    &-contens-data {
+        padding: 40px 0;
+        background: #fff;
+        border: 1px solid #e7e7e7;
+
+        *:focus {
+            outline: none;
+        }
+
+        .slick-dots {
+            padding-top: 7px;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 4px;
+                vertical-align: middle;
+                font-size: 0;
+
+                button {
+                    height: 4px;
+                    width: 20px;
+                    font-size: 0;
+                    background: #E0E0E0;
+                    border: none;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background: #757575;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        background: #757575;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+
+    &-item {
+        padding: 0 20px;
+        text-align: center;
+
+        &-link {
+            display: block;
+            text-decoration: none;
+        }
+
+        .we-recommend-item-pic {
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        &-title {
+            display: block;
+            height: 60px;
+            margin: 15px 0;
+            color: #568da7;
+            font-size: 16px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        &-old-price {
+            display: block;
+            line-height: 14px;
+            font-size: 12px;
+            color: #525252;
+            text-decoration: line-through;
+        }
+
+        &-new-price {
+            display: block;
+            color: #e31837;
+            font-size: 20px;
+        }
+
+        &-price {
+            display: block;
+            padding-top: 14px;
+            font-size: 20px;
+            color: #525252;
+        }
+
+        @include bp (max-width, 820px) {
+            &-price,
+            &-new-price {
+                font-size: 16px;
+            }
+        }
+    }
+}
